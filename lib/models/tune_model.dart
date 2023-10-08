@@ -1,14 +1,8 @@
-import 'package:audioplayers/audioplayers.dart';
-import 'package:flutter/material.dart';
+ 
 
 class TuneModel {
-  final Color color;
+  final String img;
   final String sound;
 
-  const TuneModel({required this.color, required this.sound});
-
-  playSound() {
-    final player = AudioPlayer();
-    player.play(AssetSource(sound));
-  }
+  const TuneModel({required this.img, required this.sound});
 }
