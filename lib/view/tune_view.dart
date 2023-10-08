@@ -17,7 +17,7 @@ class TuneView extends StatelessWidget {
       child: ListView(
         children: [
           Column(
-            children: [
+             children: [
               ...tunes.map((e) => TuneKey(
                   onTap: () async {
                     final player = AudioPlayer();
